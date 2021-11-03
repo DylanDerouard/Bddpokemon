@@ -3,12 +3,11 @@ INSERT INTO POKEBALL (name,resistance_rate,price) VALUES ("superball",50,600);
 INSERT INTO POKEBALL (name,resistance_rate,price) VALUES ("hyperball",70,1200);
 INSERT INTO POKEBALL (name,resistance_rate,price) VALUES ("masterball",100,5000);
 
-INSERT INTO POKEMON (name,type1,typer2,stats_idstats) VALUES ("Bulbizarre","plante,poison,2);
-INSERT INTO POKEMON (name,type1,stats_idstats) VALUES ("Salamèche",feu,5);
-INSERT INTO POKEMON (name,type1,stats_idstats) VALUES ("Rattatac",normal,2);
-INSERT INTO POKEMON (name,type1,typer2,stats_idstats) VALUES ("Doduo,normal",vol,3);
-INSERT INTO POKEMON (name,type1,typer2,stats_idstats) VALUES ("Fantominus",spectre,poison,1);
-
+INSERT INTO POKEMON (name,type1,typer2,stats_idstats) VALUES ("Bulbizarre","plante,poison,1);
+INSERT INTO POKEMON (name,type1,stats_idstats) VALUES ("Salamèche",feu,2);
+INSERT INTO POKEMON (name,type1,stats_idstats) VALUES ("Rattatac",normal,3);
+INSERT INTO POKEMON (name,type1,typer2,stats_idstats) VALUES ("Doduo,normal",vol,4);
+INSERT INTO POKEMON (name,type1,typer2,stats_idstats) VALUES ("Fantominus",spectre,poison,5);
 
 INSERT INTO capspecial (name,price,type_idType) VALUES ("coupe",15000,9);
 INSERT INTO capspecial (name,price,type_idType) VALUES ("vol",25000,17);
@@ -43,3 +42,21 @@ INSERT INTO OBJECT (name, price) VALUES ("hyper potion", 1200);
 INSERT INTO OBJECT (name, price) VALUES ("rappel", 5000);
 INSERT INTO OBJECT (name, price) VALUES ("rappel max", 15000);
 INSERT INTO OBJECT (name, price) VALUES ("antidote", 500);
+
+INSERT INTO type(name) VALUES ("Acier");
+INSERT INTO type(name) VALUES ("Combat");
+INSERT INTO type(name) VALUES ("Dragon");
+INSERT INTO type(name) VALUES ("Eau");
+INSERT INTO type(name) VALUES ("Electrique");
+INSERT INTO type(name) VALUES ("Feu");
+INSERT INTO type(name) VALUES ("Glace");
+INSERT INTO type(name) VALUES ("Insecte");
+INSERT INTO type(name) VALUES ("Normal");
+INSERT INTO type(name) VALUES ("Plante");
+INSERT INTO type(name) VALUES ("Poison");
+INSERT INTO type(name) VALUES ("Psy");
+INSERT INTO type(name) VALUES ("Roche");
+INSERT INTO type(name) VALUES ("Sol");
+INSERT INTO type(name) VALUES ("Spectre");
+INSERT INTO type(name) VALUES ("Tenèbre");
+INSERT INTO type(name) VALUES ("Vol");
