@@ -8,7 +8,7 @@ from code_pokemon.shop import Shop
 
 class Game(Inventory, Pokeball, Shop):
 
-    def _init_(self, ):
+    def _init_(self, pokedollars, ball, inventory):
         global pokedollars
         os.system('cls')
         action = int(input("Sélectionner l'action souhaitée : 1- Allez au Shop  2-Afficher l'inventaire  3- Allez chasser du Pokémon  4-Quitter "))
