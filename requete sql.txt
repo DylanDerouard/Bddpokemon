@@ -1,13 +1,13 @@
-INSERT INTO POKEBALL (name,resistance_rate,price) VALUES ("pokeball",30,200);
-INSERT INTO POKEBALL (name,resistance_rate,price) VALUES ("superball",50,600);
-INSERT INTO POKEBALL (name,resistance_rate,price) VALUES ("hyperball",70,1200);
-INSERT INTO POKEBALL (name,resistance_rate,price) VALUES ("masterball",100,5000);
+INSERT INTO POKEBALL (name,resistance_rate,price,quantity) VALUES ("pokeball",30,200,15);
+INSERT INTO POKEBALL (name,resistance_rate,price,quantity) VALUES ("superball",50,600,12);
+INSERT INTO POKEBALL (name,resistance_rate,price,quantity) VALUES ("hyperball",70,1200,10);
+INSERT INTO POKEBALL (name,resistance_rate,price,quantity) VALUES ("masterball",100,5000,2);
 
-INSERT INTO POKEMON (name,type1,typer2,stats_idstats) VALUES ("Bulbizarre","plante,poison,1);
-INSERT INTO POKEMON (name,type1,stats_idstats) VALUES ("Salamèche",feu,2);
-INSERT INTO POKEMON (name,type1,stats_idstats) VALUES ("Rattatac",normal,3);
-INSERT INTO POKEMON (name,type1,typer2,stats_idstats) VALUES ("Doduo,normal",vol,4);
-INSERT INTO POKEMON (name,type1,typer2,stats_idstats) VALUES ("Fantominus",spectre,poison,5);
+INSERT INTO POKEMON (name,stats_idstats) VALUES ("Bulbizarre",1);
+INSERT INTO POKEMON (name,stats_idstats) VALUES ("Salamèche",2);
+INSERT INTO POKEMON (name,stats_idstats) VALUES ("Rattatac",3);
+INSERT INTO POKEMON (name,stats_idstats) VALUES ("Doduo,normal",4);
+INSERT INTO POKEMON (name,stats_idstats) VALUES ("Fantominus",5);
 
 INSERT INTO capspecial (name,price,type_idType) VALUES ("coupe",15000,9);
 INSERT INTO capspecial (name,price,type_idType) VALUES ("vol",25000,17);
@@ -60,3 +60,26 @@ INSERT INTO type(name) VALUES ("Sol");
 INSERT INTO type(name) VALUES ("Spectre");
 INSERT INTO type(name) VALUES ("Tenèbre");
 INSERT INTO type(name) VALUES ("Vol");
+
+INSERT INTO shop(pokeball_idPokeball ,capSpecial_idCapSpecial ,object_idobject ) VALUES
+
+    (1,null,null),
+    (2,null,null),
+    (3,null,null),
+    (4,null,null),
+    (null,1,null),
+    (null,2,null),
+    (null,3,null),
+    (null,4,null),
+    (null,5,null),
+    (null,null,1),
+    (null,null,2),
+    (null,null,3),
+    (null,null,4),
+    (null,null,5)
+;
+
+INSERT INTO pokemon_box (pokemon_idPokemon ) VALUES
+
+
+;
