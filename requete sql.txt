@@ -1,13 +1,19 @@
+######################################## P O K E B A L L ########################################
+
 INSERT INTO POKEBALL (name,resistance_rate,price,quantity) VALUES ("pokeball",30,200,15);
 INSERT INTO POKEBALL (name,resistance_rate,price,quantity) VALUES ("superball",50,600,12);
 INSERT INTO POKEBALL (name,resistance_rate,price,quantity) VALUES ("hyperball",70,1200,10);
 INSERT INTO POKEBALL (name,resistance_rate,price,quantity) VALUES ("masterball",100,5000,2);
 
-INSERT INTO POKEMON (name,stats_idstats) VALUES ("Bulbizarre",1);
-INSERT INTO POKEMON (name,stats_idstats) VALUES ("Salamèche",2);
-INSERT INTO POKEMON (name,stats_idstats) VALUES ("Rattatac",3);
-INSERT INTO POKEMON (name,stats_idstats) VALUES ("Doduo,normal",4);
-INSERT INTO POKEMON (name,stats_idstats) VALUES ("Fantominus",5);
+######################################## P O K E M O N ########################################
+
+INSERT INTO POKEMON (pokemon_list_id, stats_idstats) VALUES (1,1);
+INSERT INTO POKEMON (pokemon_list_id, stats_idstats) VALUES (21,2);
+INSERT INTO POKEMON (pokemon_list_id, stats_idstats) VALUES (17,3);
+INSERT INTO POKEMON (pokemon_list_id, stats_idstats) VALUES (10,4);
+INSERT INTO POKEMON (pokemon_list_id, stats_idstats) VALUES (8,5);
+
+######################################## C A P S P E C I A L ########################################
 
 INSERT INTO capspecial (name,price,type_idType) VALUES ("coupe",15000,9);
 INSERT INTO capspecial (name,price,type_idType) VALUES ("vol",25000,17);
@@ -16,11 +22,15 @@ INSERT INTO capspecial (name,price,type_idType) VALUES ("force",20000,2);
 INSERT INTO capspecial (name,price,type_idType) VALUES ("flash",25000,5);
 INSERT INTO capspecial (name,price,type_idType) VALUES ("Éclate-Roc",15000,13);
 
+######################################## S T A T S ########################################
+
 INSERT INTO stats (PV, defense, attack, speed, special_defense, special_attack, level) VALUES (10, 10, 10, 10, 5, 10, 1);
 INSERT INTO stats (PV, defense, attack, speed, special_defense, special_attack, level) VALUES (1, 6, 7, 3, 14, 9, 52);
 INSERT INTO stats (PV, defense, attack, speed, special_defense, special_attack, level) VALUES (6, 15, 12, 2, 15, 8, 26);
 INSERT INTO stats (PV, defense, attack, speed, special_defense, special_attack, level) VALUES (2, 14, 8, 15, 15, 10, 20);
 INSERT INTO stats (PV, defense, attack, speed, special_defense, special_attack, level) VALUES (10, 7, 3, 11, 1, 5, 18);
+
+######################################## I N V E N T O R Y ########################################
 
 INSERT INTO arena (badge_name) VALUES ("Badge Charbon");
 INSERT INTO arena (badge_name) VALUES ("Badge Forêt");
@@ -30,6 +40,8 @@ INSERT INTO arena (badge_name) VALUES ("Badge Fantôme");
 INSERT INTO arena (badge_name) VALUES ("Badge Mine");
 INSERT INTO arena (badge_name) VALUES ("Badge Glaçon");
 INSERT INTO arena (badge_name) VALUES ("Badge Phare");
+
+######################################## O B J E C T ########################################
 
 INSERT INTO OBJECT (name, price) VALUES ("pierre feu", 1000);
 INSERT INTO OBJECT (name, price) VALUES ("pierre eau", 1000);
@@ -42,6 +54,9 @@ INSERT INTO OBJECT (name, price) VALUES ("hyper potion", 1200);
 INSERT INTO OBJECT (name, price) VALUES ("rappel", 5000);
 INSERT INTO OBJECT (name, price) VALUES ("rappel max", 15000);
 INSERT INTO OBJECT (name, price) VALUES ("antidote", 500);
+
+######################################## T Y P E ########################################
+
 
 INSERT INTO type(name) VALUES ("Acier");
 INSERT INTO type(name) VALUES ("Combat");
@@ -61,6 +76,10 @@ INSERT INTO type(name) VALUES ("Spectre");
 INSERT INTO type(name) VALUES ("Tenèbre");
 INSERT INTO type(name) VALUES ("Vol");
 
+
+######################################## S H O P ########################################
+
+
 INSERT INTO shop(pokeball_idPokeball ,capSpecial_idCapSpecial ,object_idobject ) VALUES
 
     (1,null,null),
@@ -79,7 +98,113 @@ INSERT INTO shop(pokeball_idPokeball ,capSpecial_idCapSpecial ,object_idobject )
     (null,null,5)
 ;
 
+######################################## P O K E M O N  B O X ########################################
+
 INSERT INTO pokemon_box (pokemon_idPokemon ) VALUES
 
+
+;
+
+######################################## P O K E M O N   A S   T Y P E ########################################
+
+INSERT INTO pokemon_has_type (pokemon_idPokemon, type_idType ) VALUES
+
+    (1,10),
+    (1,11),
+    (21,1),
+    (21,5),
+    
+
+
+;
+
+######################################## P O K E M O N   L I S T ########################################
+
+
+INSERT INTO pokemon_list (name) VALUES
+
+    ("Bulbizarre"),
+    ("Herbizarre"),
+    ("Florizarre"),
+    ("Salamèche"),
+    ("Reptincel"),
+    ("Dracaufeu"),
+    ("Carapuce"),
+    ("Carabaffe"),
+    ("Tortank"),
+    ("Chenipan"),
+    ("Chrysacier"),
+    ("Papilusion"),
+    ("Aspicot"),
+    ("Rattatac"),
+    ("Doduo"),
+    ("Fantominus"),
+    ("Abo"),
+    ("Goupix"),
+    ("Paras"),
+    ("Machoc"),
+    ("Magnéti"),
+    ("Stari"),
+    ("Draco")
+    
+;
+
+######################################## I N V E N T O R Y ########################################
+
+INSERT INTO inventory (pokemon_in_the_pocket_idPokemon_in_the_pocket) VALUES
+
+    (1),
+    (2),
+    (3),
+    (4),
+    (5),
+
+;
+
+INSERT INTO inventory (money) VALUES
+
+    (100000)
+
+;
+
+INSERT INTO inventory (pokemon_in_the_pocket_idPokemon_in_the_pocket) VALUES
+
+    (1),
+    (2),
+    (3),
+    (4),
+    (5),
+
+;
+
+INSERT INTO inventory (capspecial_idCapSpecial) VALUES
+
+    (1),
+    (2),
+    (3),
+    (4),
+    (5),
+    (6),
+
+;
+
+INSERT INTO inventory (badge_earned, arene_idArena) VALUES
+
+    (0,1),
+    (0,2),
+    (0,3),
+    (0,4),
+    (0,5),
+    (0,6),
+    (0,7),
+    (0,8),
+;
+
+INSERT INTO inventory (pokeball_idPokeball) VALUES
+
+    (1),
+    (2),
+    (3),
+    (4),
 
 ;
