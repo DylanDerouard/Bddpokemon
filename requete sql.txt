@@ -30,7 +30,7 @@ INSERT INTO stats (PV, defense, attack, speed, special_defense, special_attack, 
 INSERT INTO stats (PV, defense, attack, speed, special_defense, special_attack, level) VALUES (2, 14, 8, 15, 15, 10, 20);
 INSERT INTO stats (PV, defense, attack, speed, special_defense, special_attack, level) VALUES (10, 7, 3, 11, 1, 5, 18);
 
-######################################## I N V E N T O R Y ########################################
+######################################## A R E N A ########################################
 
 INSERT INTO arena (badge_name) VALUES ("Badge Charbon");
 INSERT INTO arena (badge_name) VALUES ("Badge Forêt");
