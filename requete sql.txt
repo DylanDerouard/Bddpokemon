@@ -102,20 +102,25 @@ INSERT INTO shop(pokeball_idPokeball ,capSpecial_idCapSpecial ,object_idobject )
 
 INSERT INTO pokemon_box (pokemon_idPokemon ) VALUES
 
+;
+
+######################################## P O K E M O N  I N   T H E   P O K E T ########################################
+
+INSERT INTO pokemon_box (pokemon_idPokemon ) VALUES
 
 ;
 
 ######################################## P O K E M O N   A S   T Y P E ########################################
 
-INSERT INTO pokemon_has_type (pokemon_idPokemon, type_idType ) VALUES
+INSERT INTO pokemon_list_has_type (pokemon_list_idPokemon, type_idType ) VALUES
 
     (1,10),
     (1,11),
     (21,1),
     (21,5),
-    
-
-
+    (17,11),
+    (10,8),
+    (8,4)
 ;
 
 ######################################## P O K E M O N   L I S T ########################################
@@ -157,7 +162,7 @@ INSERT INTO inventory (pokemon_in_the_pocket_idPokemon_in_the_pocket) VALUES
     (2),
     (3),
     (4),
-    (5),
+    (5)
 
 ;
 
@@ -173,7 +178,7 @@ INSERT INTO inventory (pokemon_in_the_pocket_idPokemon_in_the_pocket) VALUES
     (2),
     (3),
     (4),
-    (5),
+    (5)
 
 ;
 
@@ -184,7 +189,7 @@ INSERT INTO inventory (capspecial_idCapSpecial) VALUES
     (3),
     (4),
     (5),
-    (6),
+    (6)
 
 ;
 
@@ -197,7 +202,7 @@ INSERT INTO inventory (badge_earned, arene_idArena) VALUES
     (0,5),
     (0,6),
     (0,7),
-    (0,8),
+    (0,8)
 ;
 
 INSERT INTO inventory (pokeball_idPokeball) VALUES
@@ -205,6 +210,6 @@ INSERT INTO inventory (pokeball_idPokeball) VALUES
     (1),
     (2),
     (3),
-    (4),
+    (4)
 
 ;
