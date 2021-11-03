@@ -1,0 +1,45 @@
+INSERT INTO POKEBALL (name,resistance_rate,price) VALUES ("pokeball",30,200);
+INSERT INTO POKEBALL (name,resistance_rate,price) VALUES ("superball",50,600);
+INSERT INTO POKEBALL (name,resistance_rate,price) VALUES ("hyperball",70,1200);
+INSERT INTO POKEBALL (name,resistance_rate,price) VALUES ("masterball",100,5000);
+
+INSERT INTO POKEMON (name,type1,typer2,stats_idstats) VALUES ("Bulbizarre","plante,poison,2);
+INSERT INTO POKEMON (name,type1,stats_idstats) VALUES ("Salamèche",feu,5);
+INSERT INTO POKEMON (name,type1,stats_idstats) VALUES ("Rattatac",normal,2);
+INSERT INTO POKEMON (name,type1,typer2,stats_idstats) VALUES ("Doduo,normal",vol,3);
+INSERT INTO POKEMON (name,type1,typer2,stats_idstats) VALUES ("Fantominus",spectre,poison,1);
+
+
+INSERT INTO capspecial (name,price,type_idType) VALUES ("coupe",15000,9);
+INSERT INTO capspecial (name,price,type_idType) VALUES ("vol",25000,17);
+INSERT INTO capspecial (name,price,type_idType) VALUES ("surf",20000,4);
+INSERT INTO capspecial (name,price,type_idType) VALUES ("force",20000,2);
+INSERT INTO capspecial (name,price,type_idType) VALUES ("flash",25000,5);
+INSERT INTO capspecial (name,price,type_idType) VALUES ("Éclate-Roc",15000,13);
+
+INSERT INTO stats (PV, defense, attack, speed, special_defense, special_attack, level) VALUES (10, 10, 10, 10, 5, 10, 1);
+INSERT INTO stats (PV, defense, attack, speed, special_defense, special_attack, level) VALUES (1, 6, 7, 3, 14, 9, 52);
+INSERT INTO stats (PV, defense, attack, speed, special_defense, special_attack, level) VALUES (6, 15, 12, 2, 15, 8, 26);
+INSERT INTO stats (PV, defense, attack, speed, special_defense, special_attack, level) VALUES (2, 14, 8, 15, 15, 10, 20);
+INSERT INTO stats (PV, defense, attack, speed, special_defense, special_attack, level) VALUES (10, 7, 3, 11, 1, 5, 18);
+
+INSERT INTO arena (badge_name) VALUES ("Badge Charbon");
+INSERT INTO arena (badge_name) VALUES ("Badge Forêt");
+INSERT INTO arena (badge_name) VALUES ("Badge Pavé");
+INSERT INTO arena (badge_name) VALUES ("Badge Palustre");
+INSERT INTO arena (badge_name) VALUES ("Badge Fantôme");
+INSERT INTO arena (badge_name) VALUES ("Badge Mine");
+INSERT INTO arena (badge_name) VALUES ("Badge Glaçon");
+INSERT INTO arena (badge_name) VALUES ("Badge Phare");
+
+INSERT INTO OBJECT (name, price) VALUES ("pierre feu", 1000);
+INSERT INTO OBJECT (name, price) VALUES ("pierre eau", 1000);
+INSERT INTO OBJECT (name, price) VALUES ("pierre plante", 1000);
+INSERT INTO OBJECT (name, price) VALUES ("pierre electrique", 1500);
+INSERT INTO OBJECT (name, price) VALUES ("pierre psy", 20000);
+INSERT INTO OBJECT (name, price) VALUES ("potion", 200);
+INSERT INTO OBJECT (name, price) VALUES ("super potion", 600);
+INSERT INTO OBJECT (name, price) VALUES ("hyper potion", 1200);
+INSERT INTO OBJECT (name, price) VALUES ("rappel", 5000);
+INSERT INTO OBJECT (name, price) VALUES ("rappel max", 15000);
+INSERT INTO OBJECT (name, price) VALUES ("antidote", 500);

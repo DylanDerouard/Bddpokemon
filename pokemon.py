@@ -1,5 +1,30 @@
-import random, os, time, msvcrt
+import random, os, time, msvcrt, mysql.connector
 from collections import Counter
+
+conn = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="",
+  database="mydb"
+)
+mycursor = conn.cursor()
+def Get(selectType, entity):
+    mycursor.execute("SELECT" + str(selectType) + "FROM " + str(entity))
+    myresult = mycursor.fetchone()
+    return myresult
+
+def Post(entity):
+        mycursor.execute("INSERT INTO " + str(entity))
+
+def Put(entity):
+    print("put")
+    
+def Delete(entity):
+    print("delete")
+
+mycursor.execute("SELECT FROM type where idType = ")
+print(myresult)
+
 
 # Déclarations 
 randomCatchNumber = 0
@@ -323,7 +348,6 @@ def showInventory() :
 
 # Execute
 mainMenu()
-
 
 
 
