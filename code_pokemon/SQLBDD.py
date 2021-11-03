@@ -1,23 +1,20 @@
 import mysql.connector
-class Model:
+class GenericCrud:
 
-    conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="",
-    database="mydb"
-    )
-    mycursor = conn.cursor()
+    def _init_(self, getAll, getByID, mycursor):
+        self.GetAll = getAll
+        self.GetByID = getByID
+        self.mycursor = mycursor
 
-    def _init_(self, getAll, getByID):
-        self.getAll = getAll
-        self.getByID = getByID
+    def GetAll(mycursor, entity):
+        mycursor.execute("SELECT * FROM " + str(entity))
+        myresult = mycursor.fetchone()
+        return myresult
 
-    def getAll():
+    def GetByID(mycursor, entity):
+        mycursor.execute("SELECT * FROM " + str(entity) + " WHERE " + str(entity.id)) + " <= 6"  
+        myresult = mycursor.fetchone()
+        return myresult
 
-        getAll()
-
-
-    def getByID():
-
-        getbyid()
+    def Post(mycursor, entity):
+        mycursor.execute("INSERT INTO" + str(entity) + "() VALUES ()" )
